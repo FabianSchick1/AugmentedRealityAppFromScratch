@@ -3,7 +3,6 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <string>
-#include "VersionFromScratch.h"
 #include "VersionOpenCV.h"
 #include "Log.h"
 
