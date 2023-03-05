@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ARAppFromScratch.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\VersionOpenCV.cpp">
+    <ClCompile Include="src\OpenCVPoseEstimator.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="src\Log.cpp">
@@ -26,10 +26,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ExecutingVersion.h">
+    <ClInclude Include="src\IPoseEstimator.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\VersionOpenCV.h">
+    <ClInclude Include="src\OpenCVPoseEstimator.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="src\Log.h">

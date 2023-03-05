@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-class ExecutionVersion {
+class IPostEstimator {
 
 public:
 	virtual void makeImageGrayscale() = 0;

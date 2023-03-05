@@ -20,13 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Log.cpp" />
-    <ClCompile Include="src\ARAppFromScratch.cpp" />
-    <ClCompile Include="src\VersionOpenCV.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\OpenCVPoseEstimator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Log.h" />
-    <ClInclude Include="src\ExecutingVersion.h" />
-    <ClInclude Include="src\VersionOpenCV.h" />
+    <ClInclude Include="src\IPoseEstimator.h" />
+    <ClInclude Include="src\OpenCVPoseEstimator.h" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="assets\video_desk.mp4" />

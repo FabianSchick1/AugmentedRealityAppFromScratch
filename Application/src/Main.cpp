@@ -3,8 +3,9 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <string>
-#include "VersionOpenCV.h"
+#include "OpenCVPoseEstimator.h"
 #include "Log.h"
+#include "OpenCVPoseEstimator.h"
 
 using namespace std;
 using namespace Application;
@@ -30,7 +31,6 @@ int main(int argc, char** argv)
     cv::Mat frame;
     while (videoCapture.read(frame))
     {
-        
         int down_width = 720;
         int down_height = 1280;
         resize(frame, frame, cv::Size(down_width, down_height), cv::INTER_LINEAR);
@@ -43,7 +43,7 @@ int main(int argc, char** argv)
             break;
         }
     }
-    
+
     cv::destroyWindow("Video");
     videoCapture.release();
 
