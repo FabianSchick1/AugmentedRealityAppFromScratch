@@ -18,9 +18,6 @@
     <ClCompile Include="src\ARAppFromScratch.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\VersionFromScratch.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="src\VersionOpenCV.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
@@ -30,9 +27,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ExecutingVersion.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="src\VersionFromScratch.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="src\VersionOpenCV.h">
