@@ -8,48 +8,45 @@
 #include "Log.h"
 
 using namespace std;
-using namespace cv;
 using namespace Application;
 
 
-int main()
+int main(int argc, char** argv)
 {
     Application::Log::Init();
     AR_CORE_WARN("Initialized Log!");
     AR_CORE_INFO("Initialized Log!");
     AR_INFO("Hello! Var={0}", 5);
 
-
     string videoFile = "./Assets/video_desk.mp4";
 
-    VideoCapture cap(videoFile);
-    cap.set(CAP_PROP_BUFFERSIZE, 60);
+    cv::VideoCapture videoCapture(videoFile);
+    videoCapture.set(cv::CAP_PROP_BUFFERSIZE, 60);
     
-    if (!cap.isOpened()) {
+    if (!videoCapture.isOpened()) {
         std::cout << "Error opening video stream or file" << std::endl;
         return -1;
     }
-    while (true) {
-        cv::Mat frame;
 
-        cap.read(frame);
-
-        if (frame.empty())
-            break;
-
+    cv::Mat frame;
+    while (videoCapture.read(frame))
+    {
+        
         int down_width = 720;
         int down_height = 1280;
-        resize(frame, frame, Size(down_width, down_height), INTER_LINEAR);
-
-        imshow("Frame", frame);
-
-        if (waitKey(1) == 27)
+        resize(frame, frame, cv::Size(down_width, down_height), cv::INTER_LINEAR);
+        
+        // TODO: Fixing low fps video
+        imshow("Video", frame);
+       
+        if (cv::waitKey(25) >= 0)
+        {
             break;
+        }
     }
     
-    cap.release();
-
-    cv::destroyAllWindows();
+    cv::destroyWindow("Video");
+    videoCapture.release();
 
     return 0;
 
