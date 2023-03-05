@@ -5,13 +5,21 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <string>
+#include "./Application/Log.h"
 
 using namespace std;
 using namespace cv;
+using namespace Application;
 
 
 int main()
 {
+    Application::Log::Init();
+    AR_CORE_WARN("Initialized Log!");
+    AR_CORE_INFO("Initialized Log!");
+    AR_INFO("Hello! Var={0}", 5);
+
+
     string videoFile = "./Assets/video_desk.mp4";
 
     VideoCapture cap(videoFile);
