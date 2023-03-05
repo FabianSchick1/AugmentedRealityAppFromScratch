@@ -5,7 +5,7 @@
 #include <string>
 #include "VersionFromScratch.h"
 #include "VersionOpenCV.h"
-#include "./Application/Log.h"
+#include "Log.h"
 
 using namespace std;
 using namespace cv;
