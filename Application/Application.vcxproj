@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Application\Log.cpp" />
+    <ClCompile Include="src\Log.cpp" />
     <ClCompile Include="src\ARAppFromScratch.cpp" />
     <ClCompile Include="src\VersionFromScratch.cpp" />
     <ClCompile Include="src\VersionOpenCV.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Application\Log.h" />
+    <ClInclude Include="src\Log.h" />
     <ClInclude Include="src\ExecutingVersion.h" />
     <ClInclude Include="src\VersionFromScratch.h" />
     <ClInclude Include="src\VersionOpenCV.h" />

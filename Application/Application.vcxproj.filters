@@ -24,7 +24,7 @@
     <ClCompile Include="src\VersionOpenCV.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\Application\Log.cpp">
+    <ClCompile Include="src\Log.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,7 +38,7 @@
     <ClInclude Include="src\VersionOpenCV.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\Application\Log.h">
+    <ClInclude Include="src\Log.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
