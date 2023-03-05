@@ -1,10 +1,10 @@
 #include <iostream>
-#include "VersionFromScratch.h"
-#include "VersionOpenCV.h"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <string>
+#include "VersionFromScratch.h"
+#include "VersionOpenCV.h"
 #include "./Application/Log.h"
 
 using namespace std;
